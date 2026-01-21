@@ -1,12 +1,12 @@
 <!-- AUTOGEN:STATS -->
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![Terminal](https://img.shields.io/badge/mac%20terminal-000000?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000)](https://support.apple.com/guide/terminal/welcome/mac) [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/) 
 
-[![📊 Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-07/main/assets/db/visitors-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-07/graphs/traffic)
-[![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-07/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-07/actions/workflows/screenshot-and-visitor.yaml)
-[![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-07/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/goit-js-hw-07)
-[![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-07/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/goit-js-hw-07/blob/main/LICENSE)
+[![📊 Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-08/main/assets/db/visitors-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-08/graphs/traffic)
+[![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-08/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/goit-js-hw-08/actions/workflows/screenshot-and-visitor.yaml)
+[![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-08/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/goit-js-hw-08)
+[![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-js-hw-08/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/goit-js-hw-08/blob/main/LICENSE)
 
-## 📸 Скріншот проекту
+## 📸 Project Screenshot
 ![Project Screenshot](./assets/screenshot.png)
 <!-- END:AUTOGEN -->
 
@@ -20,104 +20,201 @@
 
 [SOLOLEARN](https://www.sololearn.com/certificates/CT-VJXN3HQH)
 
-# JavaScript Homework 07
+# JavaScript Homework 08
 
-## About
+## Task - Image Gallery
 
-GoIT Homework-JS #7 focuses on DOM manipulation and event handling. Use the provided Figma layout to style the task markup. Do not change the HTML structure in task files.
+Create an image gallery with the ability to click on its elements and view the full-size image in a modal window. Watch the demo video of the gallery functionality.
 
-Figma layout: https://www.figma.com/design/m8k9NQV7qZrtYDCvxfD68B/HW-JavaScript?node-id=0-1&p=f  
-Homework brief: https://www.edu.goit.global/ru/learn/35708569/18936918/19852907/homework
+Creating a gallery is a complex task that is best broken down into several simpler subtasks. By completing each one, you will move closer to the final goal. This process is called **task decomposition**.
 
-## Task 1. Categories
+---
 
-**Complete this task in `js/task-1.js`.**
+## Implementation Steps
 
-Using DOM properties and methods, write a script that:
+### Step 1 - Gallery Markup
 
-- Counts and logs the number of categories in `ul#categories` (i.e. `li.item` elements).
-- For each `li.item`, logs the category title (`<h2>`) and the number of elements within the category.
+Start by creating a container for the gallery elements. Add an unordered list with the class `gallery` to your HTML code.
 
-### Mentor Review Criteria
-
-- Category count, titles, and item counts are obtained via DOM properties and methods
-- Data for each category is logged inside a loop or `forEach()`
-- Console output format:
-  - `Number of categories: X`
-  - `Category: ...`
-  - `Elements: ...`
-
-## Task 2. Image Gallery
-
-**Complete this task in `js/task-2.js`.**
-
-Create a gallery from the `images` array and add it to `ul.gallery`:
-
-- Create `<img>` elements inside `<li>` elements based on the data
-- Insert all gallery items into the DOM with one operation
-- Add minimal flexbox styling via CSS classes
-
-### Mentor Review Criteria
-
-- A gallery with six images is created and added to `ul.gallery`
-- The gallery consists of 6 `<li>` elements with nested `<img>` elements
-- Images are created using data from the `images` array
-- All elements are inserted with a single DOM operation
-- Minimal flexbox styling is present
-
-## Task 3. Input Greeting
-
-**Complete this task in `js/task-3.js`.**
-
-On input in `input#name-input`, substitute the current value into `span#name-output` as the greeting name:
-
-- Trim whitespace from both ends of the input value
-- If the input is empty (or only spaces), show `Anonymous`
-
-### Mentor Review Criteria
-
-- `input` event is listened to on `#name-input`
-- The current input value is shown in `#name-output`
-- Input value is trimmed
-- `Anonymous` is shown when input is empty
-
-## Task 4. Login Form
-
-**Complete this task in `js/task-4.js`.**
-
-Implement login form submission:
-
-- Handle the `submit` event on `.login-form`
-- Prevent page reload
-- If any field is empty, show `alert('All form fields must be filled in')`
-- Otherwise, collect values (trimmed) into an object using `elements`, log it, and reset the form
-
-### Mentor Review Criteria
-
-- `submit` event is handled
-- Page does not reload on submit
-- Empty fields trigger an alert
-- Logged object contains trimmed values by input name
-- Form fields are reset after submit
-
-## Task 5. Background Color Widget
-
-**Complete this task in `js/task-5.js`.**
-
-On click of `button.change-color`, set the `<body>` background color to a random hex color and show it in `span.color`.
-
-Use:
-
-```javascript
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+```html
+<ul class="gallery"></ul>
 ```
 
-### Mentor Review Criteria
+### Step 2 - Images Array
 
-- Background changes only on button click
-- Each click applies a new random color
-- `<body>` and `span.color` show the same color value
+You'll need data to create the gallery elements. Add this array of objects to your JavaScript file. Each object represents one gallery item.
+
+- **preview** — link to the small version of the image for the gallery card
+- **original** — link to the large version of the image for the modal window
+- **description** — text description of the image, for the `alt` attribute of the small image and caption of the large image in the modal
+
+```javascript
+const images = [
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg',
+    description: 'Hokkaido Flower',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg',
+    description: 'Container Haulage Freight',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg',
+    description: 'Aerial Beach View',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg',
+    description: 'Flower Blooms',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg',
+    description: 'Alpine Mountains',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg',
+    description: 'Mountain Lake Sailing',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg',
+    description: 'Alpine Spring Meadows',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg',
+    description: 'Nature Landscape',
+  },
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
+    description: 'Lighthouse Coast Sea',
+  },
+];
+```
+
+### Step 3 - Gallery Item Markup
+
+You have a container to add gallery elements to, and data to create them from. Now it's time to populate the gallery with markup.
+
+Use the `images` array of objects and this HTML template for a gallery item, then create the markup in your JavaScript code and add all markup inside `ul.gallery`. Do not add other HTML tags besides those contained in this template.
+
+```html
+<li class="gallery-item">
+  <a class="gallery-link" href="large-image.jpg">
+    <img
+      class="gallery-image"
+      src="small-image.jpg"
+      data-source="large-image.jpg"
+      alt="Image description"
+    />
+  </a>
+</li>
+```
+
+**Important points:**
+
+- In the `src` attribute of the `<img>` tag, specify the link to the small version of the image.
+- For the `alt` attribute, use the image description.
+- The link to the large image should be stored in the `data-source` attribute on the `<img>` element, and specified in the `href` of the link.
+
+**Note:** The image is wrapped in a link with an `href` attribute pointing to the image file path. Therefore, clicking on it may trigger downloading the image to the user's computer. **Prevent this default behavior**.
+
+### Step 4 - Styles
+
+Add gallery styling according to the layout.
+
+### Step 5 - Event Delegation
+
+It's time to add functionality to listen for clicks on gallery elements and get the link to the large image on click. Use the **delegation technique** on `ul.gallery`. For now, when clicking on a gallery element, output the link to the large image stored as the value of the `data-source` attribute of the `img` element to the console.
+
+### Step 6 - Library Integration
+
+The **basicLightbox** library provides a fully functional modal window that perfectly suits our task. Use the **jsDelivr** CDN service and add links to the minified (`.min`) JS and CSS files of the library to your HTML file.
+
+### Step 7 - Modal Window
+
+Enhance your code so that when clicking on a gallery element, a modal window from the connected library opens. To learn how to initialize the modal window in your code and how to use it, refer to the documentation and examples.
+
+### Step 8 - Large Image
+
+Use your code to get the link to the large image from the `data-source` attribute to replace the value of the `src` attribute of the `<img>` element in the modal window before opening. Use the ready-made modal window markup with an image from the basicLightbox library examples.
+
+---
+
+## Mentor Review Criteria
+
+The mentor will check the following:
+
+✅ A gallery of images from the `images` data array is displayed on the live page
+
+✅ The image gallery is styled according to the layout
+
+✅ Gallery data is created dynamically in JavaScript
+
+✅ Event delegation technique is used when listening for click events on gallery elements
+
+✅ Nothing happens when clicking between gallery elements
+
+✅ The basicLightbox library is connected
+
+✅ When clicking on a gallery element, a modal window from the connected library opens, containing an enlarged version of the clicked image
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- basicLightbox Library
+
+## Project Structure
+
+```
+goit-js-hw-08/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── gallery.js
+├── assets/
+└── README.md
+```
+
+---
+
+## Setup Instructions
+
+1. Clone the repository or download the project files
+2. Open `index.html` in a web browser
+3. Ensure the basicLightbox library is loaded via CDN (check the HTML file)
+4. Test the gallery functionality by clicking on images
+
+## Resources
+
+- [basicLightbox Documentation](https://github.com/electerious/basicLightbox)
+- [jsDelivr CDN](https://www.jsdelivr.com/)
